@@ -1,0 +1,99 @@
+
+.btn-warning {
+    background-color: transparent;
+    border-color: yellow;
+    color: black;
+    font-weight: bold 
+}
+.btn-warning:focus {
+    background-color: rgb(255, 255, 0, .2);
+}
+.btn-warning:hover {
+    background-color: rgb(255, 255, 0, .2);
+}
+.btn-warning:active {
+    background-color: rgb(255, 255, 0, .2);
+}
+body {
+    background-color: aqua;
+    background-image: url("https://www.closetworld.com/wp-content/uploads/2018/01/3Signature-CWCloset.jpg");
+}
+.button-col {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.button-row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+.custom-select {
+    border-radius: 5px;
+    background-color:lightgray;
+}
+.custom-select:hover {
+    cursor: pointer;
+}
+.modal-header {
+    background-color: lightgray;
+}
+.modal-footer {
+    background-color: lightgray;
+}
+.modal-body {
+   background-color: rgba(22, 33, 231, 0.2);
+}
+.list {
+    background: 2px solid black;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+.modal-wrapper {
+    margin-right: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.my-col {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.outfit-table {
+    width: 100%;
+    text-align: center;
+}
+.my-row {
+    width: 100vw;
+    background-color: gray;
+}
+.planner {
+    background-image: url("https://www.homestratosphere.com/wp-content/uploads/2019/02/Spacious-walk-in-closet-floor-to-ceiling-feb5.jpg");
+    background-size: cover;
+    height: 500px;
+}
+.submit-button {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    border: 10px solid rgba(255, 0, 25, 0.2);
+    background-color: rgb(255, 0, 0, .5);
+    font-size: 40px;
+    color: white;
+}
+.submit-button:hover {
+    border: 20px solid rgba(0, 0, 0, .2);
+    background-color: rgba(9, 255, 29, 0.5);
+    color: black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+    
+}

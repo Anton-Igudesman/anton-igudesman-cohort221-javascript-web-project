@@ -7,46 +7,50 @@ const jacket = ['you don\'t need a jacket!!', 'windbreaker', 'blazer', 'rain-coa
 //initializing variable to use for DOM element within functions
 let weather;
 let activity;
+let shoePlan = document.getElementById('shoes');
+let pantsPlan = document.getElementById('pants');
+let shirtPlan = document.getElementById('shirt');
+let jacketPlan = document.getElementById('jacket');
 
 //sunny weather function
 function sun() {
     let sunClothes = document.getElementById('activity').value;
     switch(sunClothes) {
         case 'date':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[2];
-            document.getElementById('shirt').innerHTML = shirt[1];
-            document.getElementById('jacket').innerHTML = jacket[0]; 
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[2];
+            shirtPlan.innerHTML = shirt[1];
+            jacketPlan.innerHTML = jacket[0]; 
             break;
         case 'run':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[3];
-            document.getElementById('shirt').innerHTML = shirt[2];
-            document.getElementById('jacket').innerHTML = jacket[0];
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[3];
+            shirtPlan.innerHTML = shirt[2];
+            jacketPlan.innerHTML = jacket[0];
         break;
         case 'garden':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[3];
-            document.getElementById('shirt').innerHTML = shirt[0];
-            document.getElementById('jacket').innerHTML = jacket[0];
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[3];
+            shirtPlan.innerHTML = shirt[0];
+            jacketPlan.innerHTML = jacket[0];
         break;
         case 'errands':
-            document.getElementById('shoes').innerHTML = shoes[1];
-            document.getElementById('pants').innerHTML = pants[2];
-            document.getElementById('shirt').innerHTML = shirt[2];
-            document.getElementById('jacket').innerHTML = jacket[0];  
+            shoePlan.innerHTML = shoes[1];
+            pantsPlan.innerHTML = pants[2];
+            shirtPlan.innerHTML = shirt[2];
+            jacketPlan.innerHTML = jacket[0];  
         break;
         case 'segway':
-            document.getElementById('shoes').innerHTML = 'Really??!';
-            document.getElementById('pants').innerHTML = 'what is your';
-            document.getElementById('shirt').innerHTML = 'obsession with';
-            document.getElementById('jacket').innerHTML = 'Segways?!';
+            shoePlan.innerHTML = 'Really??!';
+            pantsPlan.innerHTML = 'what is your';
+            shirtPlan.innerHTML = 'obsession with';
+            jacketPlan.innerHTML = 'Segways?!';
         break;
         case 'museum':
-            document.getElementById('shoes').innerHTML = shoes[1];
-            document.getElementById('pants').innerHTML = pants[2];
-            document.getElementById('shirt').innerHTML = shirt[1];
-            document.getElementById('jacket').innerHTML = jacket[0];
+            shoePlan.innerHTML = shoes[1];
+            pantsPlan.innerHTML = pants[2];
+            shirtPlan.innerHTML = shirt[1];
+            jacketPlan.innerHTML = jacket[0];
     }
 }
 
@@ -55,40 +59,40 @@ function rain() {
     let rainGear = document.getElementById('activity').value;
     switch(rainGear) {
         case 'date':
-            document.getElementById('shoes').innerHTML = shoes[4];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[3];
-            document.getElementById('jacket').innerHTML = jacket[3]; 
+            shoePlan.innerHTML = shoes[4];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[3];
+            jacketPlan.innerHTML = jacket[3]; 
             break;
         case 'run':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[1];
-            document.getElementById('shirt').innerHTML = shirt[1];
-            document.getElementById('jacket').innerHTML = jacket[3];
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[1];
+            shirtPlan.innerHTML = shirt[1];
+            jacketPlan.innerHTML = jacket[3];
         break;
         case 'garden':
-            document.getElementById('shoes').innerHTML = shoes[4];
-            document.getElementById('pants').innerHTML = pants[1];
-            document.getElementById('shirt').innerHTML = shirt[1];
-            document.getElementById('jacket').innerHTML = jacket[3];
+            shoePlan.innerHTML = shoes[4];
+            pantsPlan.innerHTML = pants[1];
+            shirtPlan.innerHTML = shirt[1];
+            jacketPlan.innerHTML = jacket[3];
         break;
         case 'errands':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[4];
-            document.getElementById('jacket').innerHTML = jacket[3];  
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[4];
+            jacketPlan.innerHTML = jacket[3];  
         break;
         case 'segway':
-            document.getElementById('shoes').innerHTML = 'Really??!';
-            document.getElementById('pants').innerHTML = 'Segways are';
-            document.getElementById('shirt').innerHTML = 'not designed';
-            document.getElementById('jacket').innerHTML = 'for rain!!';
+            shoePlan.innerHTML = 'Really??!';
+            pantsPlan.innerHTML = 'Segways are';
+            shirtPlan.innerHTML = 'not designed';
+            jacketPlan.innerHTML = 'for rain!!';
         break;
         case 'museum':
-            document.getElementById('shoes').innerHTML = shoes[2];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[4];
-            document.getElementById('jacket').innerHTML = jacket[4];
+            shoePlan.innerHTML = shoes[2];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[4];
+            jacketPlan.innerHTML = jacket[4];
         default:
             console.log('outfits here');
     }
@@ -99,40 +103,40 @@ function snow() {
     let snowSuit = document.getElementById('activity').value;
     switch(snowSuit) {
         case 'date':
-            document.getElementById('shoes').innerHTML = shoes[2];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[3];
-            document.getElementById('jacket').innerHTML = jacket[4]; 
+            shoePlan.innerHTML = shoes[2];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[3];
+            jacketPlan.innerHTML = jacket[4]; 
             break;
         case 'run':
-            document.getElementById('shoes').innerHTML = 'I think';
-            document.getElementById('pants').innerHTML = 'you should relax';
-            document.getElementById('shirt').innerHTML = 'and drink';
-            document.getElementById('jacket').innerHTML = 'some hot cocoa';
+            shoePlan.innerHTML = 'I think';
+            pantsPlan.innerHTML = 'you should relax';
+            shirtPlan.innerHTML = 'and drink';
+            jacketPlan.innerHTML = 'some hot cocoa';
         break;
         case 'garden':
-            document.getElementById('shoes').innerHTML = 'Your garden';
-            document.getElementById('pants').innerHTML = 'is asleep';
-            document.getElementById('shirt').innerHTML = 'for the';
-            document.getElementById('jacket').innerHTML = 'winter!!';
+            shoePlan.innerHTML = 'Your garden';
+            pantsPlan.innerHTML = 'is asleep';
+            shirtPlan.innerHTML = 'for the';
+            jacketPlan.innerHTML = 'winter!!';
         break;
         case 'errands':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[4];
-            document.getElementById('jacket').innerHTML = jacket[1];  
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[4];
+            jacketPlan.innerHTML = jacket[4];  
         break;
         case 'segway':
-            document.getElementById('shoes').innerHTML = 'Really??!';
-            document.getElementById('pants').innerHTML = 'Segways are';
-            document.getElementById('shirt').innerHTML = 'not designed';
-            document.getElementById('jacket').innerHTML = 'for snow!!';
+            shoePlan.innerHTML = 'Really??!';
+            pantsPlan.innerHTML = 'Segways are';
+            shirtPlan.innerHTML = 'not designed';
+            jacketPlan.innerHTML = 'for snow!!';
         break;
         case 'museum':
-            document.getElementById('shoes').innerHTML = shoes[2];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[4];
-            document.getElementById('jacket').innerHTML = jacket[4];
+            shoePlan.innerHTML = shoes[2];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[4];
+            jacketPlan.innerHTML = jacket[4];
         default:
             console.log('outfits here');
     }
@@ -143,40 +147,40 @@ function overcast() {
     let overcastOutfit = document.getElementById('activity').value;
     switch(overcastOutfit) {
         case 'date':
-            document.getElementById('shoes').innerHTML = shoes[3];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[4];
-            document.getElementById('jacket').innerHTML = jacket[2];
+            shoePlan.innerHTML = shoes[3];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[4];
+            jacketPlan.innerHTML = jacket[2];
         break;
         case 'run':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[4];
-            document.getElementById('shirt').innerHTML = shirt[1];
-            document.getElementById('jacket').innerHTML = jacket[1];
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[4];
+            shirtPlan.innerHTML = shirt[1];
+            jacketPlan.innerHTML = jacket[1];
         break;
         case 'garden':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[4];
-            document.getElementById('shirt').innerHTML = shirt[1];
-            document.getElementById('jacket').innerHTML = jacket[0];
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[4];
+            shirtPlan.innerHTML = shirt[1];
+            jacketPlan.innerHTML = jacket[0];
         break;
         case 'errands':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[4];
-            document.getElementById('jacket').innerHTML = jacket[1];  
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[4];
+            jacketPlan.innerHTML = jacket[1];  
         break;
         case 'segway':
-            document.getElementById('shoes').innerHTML = 'Really??!';
-            document.getElementById('pants').innerHTML = 'a';
-            document.getElementById('shirt').innerHTML = 'SEGWAY';
-            document.getElementById('jacket').innerHTML = 'tour???!!';
+            shoePlan.innerHTML = 'Really??!';
+            pantsPlan.innerHTML = 'a';
+            shirtPlan.innerHTML = 'SEGWAY';
+            jacketPlan.innerHTML = 'tour???!!';
         break;
         case 'museum':
-            document.getElementById('shoes').innerHTML = shoes[0];
-            document.getElementById('pants').innerHTML = pants[0];
-            document.getElementById('shirt').innerHTML = shirt[3];
-            document.getElementById('jacket').innerHTML = jacket[0];
+            shoePlan.innerHTML = shoes[0];
+            pantsPlan.innerHTML = pants[0];
+            shirtPlan.innerHTML = shirt[3];
+            jacketPlan.innerHTML = jacket[0];
         default:
             console.log('outfits here');
     }

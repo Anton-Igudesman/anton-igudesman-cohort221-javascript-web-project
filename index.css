@@ -17,6 +17,7 @@
 body {
     background-color: aqua;
     background-image: url("https://www.closetworld.com/wp-content/uploads/2018/01/3Signature-CWCloset.jpg");
+    background-size: cover;
 }
 .button-col {
     align-items: center;

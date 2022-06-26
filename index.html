@@ -16,13 +16,14 @@
         <div class="col my-col planner">
           <div class="modal-wrapper">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-warning" data-toggle="modal" 
+            data-target="#exampleModal">
              How the heck do I use this thing?!
             <br>
             Click here to find out!
             </button>
           </div>
-            <!-- Modal -->
+            <!-- Modal containing directions -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -53,7 +54,7 @@
          <select class="custom-select" id="activity">
               <option selected>Choose an activity</option>
               <option value="date">Go on a Date</option>
-              <option value="run">Go for a Run</option>
+              <option value="running">Go for a Run</option>
               <option value="garden">Work in Garden</option>
               <option value="errands">Run Errands</option>
               <option value="segway">Segway Tour</option>
@@ -75,14 +76,14 @@
           </select>
         </div>
       </div>
-      
+      <!--Plan Outfit Button-->
       <div class="row button-row">
         <div class="col button-col">
           <button id="outfit" type="button" class="submit-button" data-toggle="modal" data-target="#exampleModalCenter">
             Plan My Outfit!!
           </button>
           
-          <!-- Modal -->
+          <!-- Modal containing outfit selections-->
           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -91,8 +92,8 @@
                  
                 
                 </div>
-                <div class="modal-body">
-                  <table class="outfit-table">
+                <div id="modal-body">
+                  <table id="outfit-table">
                     <tr>
                       <th>Shoes</th>
                       <th>Pants</th>
